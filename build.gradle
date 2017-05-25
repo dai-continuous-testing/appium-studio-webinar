@@ -1,0 +1,24 @@
+group 'com.experitest'
+version '1.0-SNAPSHOT'
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+
+repositories {
+
+    maven { url "http://repo.experitest.com:8010/Maven2/" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+    mavenCentral()
+}
+dependencies {
+    compile group: 'com.experitest', name: 'seetest-appium', version:'10.8.28'
+    compile group: 'org.testng', name: 'testng', version:'6.8.8'
+
+}
+
+test {
+    useTestNG() {
+        suites 'testng.local.xml'
+        suites 'testng.remote.xml'
+    }
+}

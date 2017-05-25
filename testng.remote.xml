@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Appium Studio - Parallel test suite" parallel="tests" thread-count="2">
+    <test name="Android Eribank">
+        <classes>
+            <class name="tests.remoteDevices.AndroidTest"/>
+        </classes>
+    </test>
+    <test name="iOS Eribank">
+        <classes>
+            <class name="tests.remoteDevices.iOSTest"/>
+        </classes>
+    </test>
+</suite>
