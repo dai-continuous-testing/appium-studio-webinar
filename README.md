@@ -16,9 +16,17 @@ https://docs.experitest.com/display/AS/Android+-+Build+your+first+test
 https://docs.experitest.com/display/AS/iOS+-+Build+your+first+test
 
 After you have both devices connected to Appium Studio you can run the tests by running the TestNG file testng.local.xml
-from Command line : 
+from Command line or IDE : 
 ```sh
 ./gradlew test
 ```
 # Run your first test - Remote Devices  Devices:
 Sign up as a user to Appium Community - https://experitest.com/appium-community/register
+Edit the capabilities files 
+
+from command line or IDE
+
+```sh
+./gradlew -q testRemote
+```
+
