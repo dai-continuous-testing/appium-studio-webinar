@@ -11,14 +11,19 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    compile group: 'com.experitest', name: 'seetest-appium', version:'10.8.28'
-    compile group: 'org.testng', name: 'testng', version:'6.8.8'
-
+    compile group: 'com.experitest', name: 'seetest-appium', version: '10.8.28'
+    compile group: 'org.testng', name: 'testng', version: '6.8.8'
 }
 
 test {
     useTestNG() {
         suites 'testng.local.xml'
-        suites 'testng.remote.xml'
     }
+}
+
+task testRemote(type: Test) {
+    useTestNG()
+            {
+                suites 'testng.remote.xml'
+            }
 }
