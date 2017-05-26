@@ -12,8 +12,8 @@ $ ./gradlew build
 # Run your first test - Local Devices:
 Connect an Android and an iOS Device using a USB cable to your PC
  - Follow our documentation for device connection 
-https://docs.experitest.com/display/AS/Android+-+Build+your+first+test
-https://docs.experitest.com/display/AS/iOS+-+Build+your+first+test
+ - https://docs.experitest.com/display/AS/Android+-+Build+your+first+test
+ - https://docs.experitest.com/display/AS/iOS+-+Build+your+first+test
 
 After you have both devices connected to Appium Studio you can run the tests by running the TestNG file testng.local.xml
 from Command line or IDE : 
